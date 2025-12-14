@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>历史状元 - 初中历史大闯关</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'paper': '#f4e4bc',
+              'paper-dark': '#e6d2a0',
+              'ink': '#2c2c2c',
+              'seal-red': '#b22222',
+              'wood': '#8b5a2b',
+            },
+            fontFamily: {
+              serif: ['"Noto Serif SC"', 'SimSun', 'serif'],
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'scale(0.8)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              }
+            },
+            animation: {
+              fadeIn: 'fadeIn 0.2s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #3e2723;
+        background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+        font-family: "Noto Serif SC", serif;
+      }
+      .card-shadow {
+        box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+      }
+      .scroll-bar-hidden::-webkit-scrollbar {
+        display: none;
+      }
+      .scroll-bar-hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
